@@ -43,3 +43,8 @@
 # Builds
 *.apk
 *.unitypackage
+
+# VS CODE
+.vscode/
+.vs
+.vs/*
