@@ -23,11 +23,19 @@ public class NewMonoBehaviourScript : MonoBehaviourPunCallbacks
         }
     }
 
+    // CONECTADO
     public override void OnConnectedToMaster()
     {
         //base.OnConnectedToMaster();
-        PhotonNetwork.JoinRandomRoom();
+        PhotonNetwork.JoinLobby();
         Debug.Log("Connected to Master");
+    }
+
+    public override void OnJoinedLobby()
+    {
+        //base.OnJoinedLobby();
+        Debug.Log("Joined Lobby");
+        PhotonNetwork.JoinRandomRoom();        
     }
 
     public override void OnDisconnected(DisconnectCause cause)
