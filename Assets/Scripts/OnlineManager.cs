@@ -75,6 +75,6 @@ public class OnlineManager : MonoBehaviourPunCallbacks
         print(PhotonNetwork.CurrentRoom.Name);
         print(PhotonNetwork.CurrentRoom.PlayerCount);
         print(PhotonNetwork.NickName);
-       // PhotonNetwork.Instantiate(playersPrefab.name, new Vector3(Random.Range(1, 7), 0, Random.Range(1, 7)), Quaternion.Euler(0, 45, 0), 0);
+        PhotonNetwork.Instantiate(playersPrefab.name, new Vector3(Random.Range(1, 7), 0, Random.Range(1, 7)), Quaternion.Euler(0, 45, 0), 0);
     }
 }
